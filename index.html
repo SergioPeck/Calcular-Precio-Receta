@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Precio de recetas</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menus">
+            <div id="menu-cambiar-ingrediente" class="d-column">
+                <button id="cerrar3" class=" hover-blanco" title="Cerrar menú">X</button>
+                <h3>Cambiar nombre</h3>
+                <input type="text" class="hover-blanco" id="input-cambiar-nombre-ingrediente">
+                <h3>Cambiar precio</h3>
+                <input type="number" class="hover-blanco" id="input-cambiar-precio-ingrediente">
+                <button id="guardar-cambio" class="hover-blanco">Guardar</button>
+
+            </div>
+            <div id="menu-ingredientes" class="d-column">
+                <button id="cerrar" class="hover-blanco" title="Cerrar menú">X</button>
+                <h3>Agregar Ingrediente</h3>
+                <div>
+                    <p>Nombre del Ingrediente</p>
+                    <input type="text" id="nombre-nuevo-ingrediente" class=" hover-blanco" placeholder="Ej: Harina">
+                </div>
+                <div>
+                    <p>Precio</p>
+                    <div class="d-row precio-kilo">
+                        <input type="number" id="precio-nuevo-ingrediente" class=" hover-blanco" placeholder="Ej: 800">
+                        <div class="dropdown">
+                            <button id="btn-dropdown" class=" hover-blanco">Seleccionar Unidad</button>
+                            <div id="dropdown-menu" class="d-column">
+                                <div class="d-row hover-blanco" id="kilogramo">
+                                    <label for="radio-kilogramo" id="laber-kilogramo" >KG</label>
+                                    <input type="radio" id="radio-kilogramo" name="unidad">
+                                </div>
+                                <div class="d-row hover-blanco" id="gramo">
+                                    <label for="radio-gramo" id="label-gramo">Gramo</label>
+                                    <input type="radio" id="radio-gramo" name="unidad">
+                                </div>
+                                <div class="d-row hover-blanco" id="unidad">
+                                    <label for="radio-unidad" id="input-unidad">1 Unidad</label>
+                                    <input type="radio" id="radio-unidad" name="unidad">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="btn-agregar-ingrediente" class="bg-negro">Agregar Ingrediente</button>
+            </div>
+
+            <div id="menu-receta" class="d-column">
+                <button id="cerrar2" class=" hover-blanco" title="Cerrar menú">X</button>
+                <h3>Agregar Receta</h3>
+                <div>
+                    <p>Nombre de la Receta</p>
+                    <input type="text" id="nombre-nueva-receta" class=" hover-blanco" placeholder="Ej: Pizza">
+                </div>
+                <div>
+                    <p>Ingredientes</p>
+                    <div id="lista-input-ingredientes" class="d-column">
+                        
+                    </div>
+                </div>
+                <button class="bg-negro" id="agregar-ingrediente-menu-2">Agregar Ingrediente</button>
+                <button id="guardar-receta" class="bg-negro">Guardar Receta</button>
+            </div>
+        </div>
+        <main class="d-row">
+            <div class="d-column">
+                <h2 id="asdd">Ingredientes</h2>
+                <div id="lista-ingredientes" class="d-row"></div>
+                <button id="btn-menu-1" class=" hover-blanco">Agregar Ingrediente</button>
+            </div>
+            <div class="d-column">
+                <h2>Recetas</h2>
+                <div id="lista-recetas"></div>
+                <button id="btn-menu-2" class=" hover-blanco">Agregar Receta</button>
+            </div>
+            <!-- <div class="d-column">
+                <h2>Beneficios</h2>
+                <div class="div-beneficio">
+                    <p>¿ Qué tanto beneficio buscas?</p>
+                    <input type="number" id="input-multiplicacion" class="hover-blanco" placeholder="Multiplicación">
+                    <input type="number" id="input-suma" class="hover-blanco" placeholder="Suma">
+                </div>
+            </div> -->
+        </main>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
