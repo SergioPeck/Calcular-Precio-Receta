@@ -5,3 +5,4 @@ También lo iré mejorando poco a poco:
 *Como así tambien una opcion para descargar/guardar una lista de precios
 
 Para usarlo simplemente descargar el repositorio y abrir el archivo "index.html"
+O también puedes usar la github page "https://sergiopeck.github.io/Calcular-Precio-Receta/"
