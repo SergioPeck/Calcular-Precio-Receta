@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+.container{
+    color: #000000;
+}
+/* Main */
+.d-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.d-column{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 350px;
+}
+.d-column h2{
+    margin-top: 20px;
+
+}
+.d-column button{
+    background-color: white;
+    border-color: rgb(230, 230, 230);
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 7px;
+    min-height: 30px;
+}
+button{
+    cursor: pointer;
+}
+/* menu ingredientes */
+#menu-ingredientes{
+    display: none;
+    position: fixed;
+    justify-content: space-evenly;
+    padding: 10px;
+    gap: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 45%;
+    min-width: 30%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(230, 230, 230);
+    background-color: #fff;
+    box-shadow: 0 0 1px 0px;
+}
+#menu-ingredientes h3,#menu-receta h3{
+    font-size: 23px;
+}
+
+#menu-ingredientes input, #menu-receta input{
+    width: 97%;
+    min-height: 30px;
+    border-radius: 5px;
+    border-style: solid;    
+    border-width: 1px;
+    border-color: rgb(230, 230, 230);
+}
+
+#menu-ingredientes .precio-kilo{
+    gap: 10px;
+}
+
+button.bg-negro{
+    background-color: black;
+    color: #fff;
+}
+button.bg-negro:hover{
+    background-color: rgb(49, 49, 49);
+    box-shadow: 0 0 1px 1px rgb(36, 36, 36);
+}
+#cerrar, #cerrar2, #cerrar3 {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: none;
+    background: none;
+    cursor:pointer;
+}
+.hover-blanco:hover{
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 0 1px 1px rgb(222, 222, 222);
+}
+/* Dropdown */
+.dropdown{
+    position: relative;
+}
+#btn-dropdown{
+    width: 100px;
+    min-height: 34px;
+}
+#dropdown-menu{
+    display: none;
+    margin-top: 0px;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid rgb(230, 230, 230);
+    min-width: 120px ;
+}
+
+#dropdown-menu2{
+    display: none;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin-top: 33px;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid rgb(230, 230, 230);
+    min-width: 120px ;
+}
+#kilogramo, #unidad, #gramo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 3px;
+    border-style: solid;
+    border-color: rgb(230, 230, 230);
+    border-width: 1px;
+}
+
+/* Menú recetas */
+#menu-receta{
+    display: none;
+    position: fixed;
+    justify-content: space-evenly;
+    padding: 10px;
+    gap: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 30%;
+    min-height: 50%;
+    max-height: 50%;
+    overflow-y: auto;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(230, 230, 230);
+    background-color: #fff;
+    box-shadow: 0 0 1px 0px;
+    z-index: 200;
+}
+#menu-cambiar-ingrediente{
+    display: none;
+    position: fixed;
+    justify-content: space-evenly;
+    padding: 10px;
+    gap: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 30%;
+    min-height: 50%;
+    max-height: 50%;
+    overflow-y: auto;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(230, 230, 230);
+    background-color: #fff;
+    box-shadow: 0 0 1px 0px;
+    z-index: 200;
+}
+.justify-content-evenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+.justify-content-between{
+    display: flex;
+    justify-content: space-between;
+}
+.mitad-mitad{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 7px;
+}
+.mitad-mitad {
+    min-width: 45%;
+}
+
+#lista-ingredientes{
+    display: none;
+    padding: 10px;
+}
+.ingredientes{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: start;
+    background-color: rgb(231, 231, 231);
+    min-height: 50px;
+}
+.div_padre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    margin-bottom: 20px;
+}
+p.nombre-ingrediente{
+    padding-left: 10px;
+    font-weight: bold;
+}
+p.precio-ingrediente{
+    padding-left: 10px;
+    color: rgb(63, 63, 63);
+}
+.imgs{
+    margin-top: 10px;
+    margin-right: 10px;
+    max-width: 30px;
+    max-height: 30px;
+    cursor: pointer;
+}
+.imgs:hover{
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 0 1px 1px rgb(222, 222, 222);
+}
+#max-w-25{
+    max-width: 25px !important;
+}
+.div-receta{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 0 1px 1px rgb(222, 222, 222);
+}
+.div-beneficio{
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    min-height: 30px;
+    min-width: 1px;
+    background-color: rgb(245,245,245);
+    box-shadow: 0 0 1px 1px rgb(222, 222, 222);
+}
+.div-beneficio input{
+    margin: 5px;
+    min-height: 20px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(230, 230, 230);
+}
+.slider-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+}
+
+#percentageInput{
+    max-width: 30px;
+}
+
+
+#btn-menu-1, #btn-menu-2{
+    margin-bottom: 50px;
+}
