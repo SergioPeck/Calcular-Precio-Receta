@@ -6,6 +6,11 @@
     color: #000000;
 }
 /* Main */
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 .d-row{
     display: flex;
     flex-direction: row;
@@ -267,4 +272,22 @@ p.precio-ingrediente{
 
 #btn-menu-1, #btn-menu-2{
     margin-bottom: 50px;
+}
+@media only screen and (max-width: 800px) {
+    h2{
+        text-align: center;
+    }
+    .d-column{
+        max-width: none;
+    }
+    .main{
+        align-items: center;
+        flex-direction: column;
+    }
+    .principales{
+        min-width: 80vw;
+    }
+    #btn-menu1{
+        min-width: 80%;
+    }
 }
