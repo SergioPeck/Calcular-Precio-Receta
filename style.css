@@ -290,4 +290,7 @@ p.precio-ingrediente{
     #btn-menu1{
         min-width: 80%;
     }
+    #menu-ingredientes, #menu-receta, #menu-cambiar-ingrediente{
+    width: 80%;
+    }
 }
